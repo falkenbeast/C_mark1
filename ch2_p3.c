@@ -20,7 +20,7 @@ int main(){
    else 
    printf("statement 3 \n");
    printf("its an end \n");
-
+   //now see the ternary operators 
 
 return 0;
 }
