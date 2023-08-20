@@ -1,4 +1,4 @@
-#include <stdio.h>     //control instruction
+#include <stdio.h>     //control instruction  (conditional instructions)
 //    types of operators : 1st is comparetive operators like ==, >=, <=, !=  then 2nd logical operator 
 //    like &&,||,=  and at last there are conditional operators like if,else. also check operator precedence
 
@@ -21,6 +21,6 @@ int main(){
    printf("statement 3 \n");
    printf("its an end \n");
    //now see the ternary operators 
-
+  (a<5) ? printf("this is less than five\n") : printf("this is grater than five\n");  //Condition ?  expression-if-true :  expression-if-false
 return 0;
 }
