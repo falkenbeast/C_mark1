@@ -1,7 +1,7 @@
 #include <stdio.h>      //2d array 
 
 int main()
-{
+{   
     // printf("Hello World\n");
     int marks[2][4] = {{4, 4, 2, 3},{3, 2, 3, 3}};
 

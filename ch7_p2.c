@@ -1,24 +1,27 @@
-#include <stdio.h>    //calling by value and by refference
-void wrong_swap(int a, int b);
-void swap(int *a, int *b);
-  int main() {
-    int x = 3; 
-    int y = 4;
-    printf("the value of x and y before swap is %d and %d\n", x, y);
-    //wrong_swap(x,y);   //will not work due to call by value
-    swap(&x,&y);    //will work due to call by reference
-    printf("the value of x and y after swap is %d and %d\n", x, y);
-  return 0;
-}
-void wrong_swap(int a, int b)
+#include <stdio.h>             //array pointers 
+int main()
 {
-        int temp = a;
-        a = b;
-        b = temp;
-}
-void swap(int *a, int *b)
-{
-        int temp = *a;
-        *a = *b;
-        *b = temp;
+    // char a = '3';
+    // char* ptra = &a;
+    // printf("%d\n", ptra);
+    // ptra--;
+    // printf("%d\n", ptra);
+    // printf("%d", ptra-2);
+    int arr[] = {311,52,3,4,5,6,67};
+    int* arrayptr = arr; //no use 
+    printf("Value at position 3 of the array is                 %d\n", arr[2]);
+    printf("Address of element at position 3 of the array is    %p\n", &arr[2]);
+    printf("Value at position 1 of the array is                 %d\n", arr[0]);
+    printf("address of first element of the array is            %p\n", &arr[0]);
+    printf("Value at position 2 of the array is                 %d\n", arr[1]);
+    printf("address of second element of the array is           %p\n", &arr[1]);
+
+    printf("The value at address of first element of the array is %d \n", *(&arr[0]));
+    printf("The value at address of first element of the array is %d \n", arr[0]);
+    printf("The value at address of first element of the array is %d \n", *(arr));
+    printf("The value at address of second element of the array is %d \n", *(&arr[1]));
+    printf("The value at address of second element of the array is %d \n", arr[1]);
+    printf("The value at address of second element of the array is %d \n", *(arr + 1));
+
+    return 0;
 }
