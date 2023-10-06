@@ -1,11 +1,10 @@
 #include <stdio.h>
   int  main() {
-    int arr[2];
-    for(int i=0;i<2;i++){
-    scanf("%d",&arr[i]);
-    }
-    for(int i=0;i<2;i++){
-    printf("%d\n", arr[i]);
-    }
+    int a = 34;
+    int b = 3;
+    float c = (float) a;
+    float d = (float) b;
+    float e = c/d;
+    printf("%f",e);
   return 0;
 }
