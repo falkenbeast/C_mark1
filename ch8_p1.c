@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>     //strings 
 
 void printStr(char str[])
 {
