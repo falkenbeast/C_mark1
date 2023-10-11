@@ -22,5 +22,5 @@ int main()
     printf("Using printf %s\n", str);
     printf("using puts: \n");
     puts(str);
-    return 0;
+    return 0;     // there is no bound checking in c
 }
