@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>              //array calling functions
 
 int func1(int array[])
 {
